@@ -10,8 +10,10 @@ $food = new Food();
 $toys = new Toys();
 $users = new Users();
 
-$products->setproductName("Nome Prodotto");
-$products->setproductPrice("Prezzo Prodotto");
+$products->setToys("Palla, Corda, Peluche");
+$products->setFood("Croccantini, Biscotti");
+$products->setToysPrice("8€");
+$products->setFoodPrice("30,00€, 4,00€");
 
 $food->setCroccantini("Monge");
 $food->setBiscotti("Pedigree Biscrock Orginal");
