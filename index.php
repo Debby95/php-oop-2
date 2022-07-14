@@ -2,7 +2,7 @@
 
 require_once "class/animal_food.php";
 require_once "class/animal_products.php";
-require_once "class/animal_toy.php";
+require_once "class/animal_toys.php";
 
 $products = new Products();
 $food = new Food();
