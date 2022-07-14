@@ -2,14 +2,20 @@
 
 require_once "class/animal_food.php";
 require_once "class/animal_products.php";
+require_once "class/animal_toy.php";
 
 $products = new Products();
 $food = new Food();
+$toys = new Toys();
 
-$products->SetproductName("Nome Prodotto");
-$products->SetproductPrice("Prezzo Prodotto");
+$products->setproductName("Nome Prodotto");
+$products->setproductPrice("Prezzo Prodotto");
 
-$food->SetCroccantini("Monge");
-$food->SetBiscotti("Pedigree Biscrock Orginal");
+$food->setCroccantini("Monge");
+$food->setBiscotti("Pedigree Biscrock Orginal");
 
-var_dump($products, $food);
+$toys->setPalla("Rossa");
+$toys->setCorda("Intrecciata, gialla, blu e verde");
+$toys->setPeluche("Orsacchiotto marrone");
+
+var_dump($products, $food, $toys);
