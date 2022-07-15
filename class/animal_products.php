@@ -1,111 +1,51 @@
 <?php
+
+
     class Products {
-        public $toys;
-        public $food;
-        public $users;
-        public $toysPrice;
-        public $foodPrice;
+        private float $price;
+        private string $title;
 
-
-
-
-
-        /**
-         * Get the value of toys
-         */ 
-        public function getToys()
+        function __construct($_price, $_title)
         {
-                return $this->toys;
+                $this->setPrice($_price);
+                $this->setTitle($_title);
+        }
+        /**
+         * Get the value of price
+         */ 
+        public function getPrice()
+        {
+                return $this->price;
         }
 
         /**
-         * Set the value of toys
+         * Set the value of price
          *
          * @return  self
          */ 
-        public function setToys($toys)
+        public function setPrice($price)
         {
-                $this->toys = $toys;
+                $this->price = $price;
 
                 return $this;
         }
 
         /**
-         * Get the value of food
+         * Get the value of title
          */ 
-        public function getFood()
+        public function getTitle()
         {
-                return $this->food;
+                return $this->title;
         }
 
         /**
-         * Set the value of food
+         * Set the value of title
          *
          * @return  self
          */ 
-        public function setFood($food)
+        public function setTitle($title)
         {
-                $this->food = $food;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of users
-         */ 
-        public function getUsers()
-        {
-                return $this->users;
-        }
-
-        /**
-         * Set the value of users
-         *
-         * @return  self
-         */ 
-        public function setUsers($users)
-        {
-                $this->users = $users;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of toysPrice
-         */ 
-        public function getToysPrice()
-        {
-                return $this->toysPrice;
-        }
-
-        /**
-         * Set the value of toysPrice
-         *
-         * @return  self
-         */ 
-        public function setToysPrice($toysPrice)
-        {
-                $this->toysPrice = $toysPrice;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of foodPrice
-         */ 
-        public function getFoodPrice()
-        {
-                return $this->foodPrice;
-        }
-
-        /**
-         * Set the value of foodPrice
-         *
-         * @return  self
-         */ 
-        public function setFoodPrice($foodPrice)
-        {
-                $this->foodPrice = $foodPrice;
+                $this->title = $title;
 
                 return $this;
         }

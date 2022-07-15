@@ -1,66 +1,57 @@
 <?php
 
+require_once __DIR__ ."/animal_products.php";
+
     class Toys extends Products{
-        public $palla;
-        public $corda;
-        public $peluche;
+        private $material;
+        private $color;
+
+        function __construct($_price, $_title, $_material, $_color)
+        {
+                parent::__construct($_price, $_title);
+
+                $this->setMaterial($_material);
+                $this->setColor($_color);
+        }
+
+
 
         /**
-         * Get the value of palla
+         * Get the value of material
          */ 
-        public function getPalla()
+        public function getMaterial()
         {
-                return $this->palla;
+                return $this->material;
         }
 
         /**
-         * Set the value of palla
+         * Set the value of material
          *
          * @return  self
          */ 
-        public function setPalla($palla)
+        public function setMaterial($material)
         {
-                $this->palla = $palla;
+                $this->material = $material;
 
                 return $this;
         }
 
         /**
-         * Get the value of corda
+         * Get the value of color
          */ 
-        public function getCorda()
+        public function getColor()
         {
-                return $this->corda;
+                return $this->color;
         }
 
         /**
-         * Set the value of corda
+         * Set the value of color
          *
          * @return  self
          */ 
-        public function setCorda($corda)
+        public function setColor($color)
         {
-                $this->corda = $corda;
-
-                return $this;
-        }
-
-        /**
-         * Get the value of peluche
-         */ 
-        public function getPeluche()
-        {
-                return $this->peluche;
-        }
-
-        /**
-         * Set the value of peluche
-         *
-         * @return  self
-         */ 
-        public function setPeluche($peluche)
-        {
-                $this->peluche = $peluche;
+                $this->color = $color;
 
                 return $this;
         }

@@ -5,6 +5,18 @@ require_once "class/animal_products.php";
 require_once "class/animal_toys.php";
 require_once "class/users.php";
 
+$products = [
+    new Food(4.00, "Pedigree Biscrock Orginal", "09/10/2022", ["cereali", "carne", "oli e grassi"]),
+    new Food(30,00, "Monge Natural Superpremium", "12/03/2024", ["pollo", "riso", "pesce"]),
+    new Toys(3,50, "Palla", "Plastic", "Blue"),
+    new Toys(8,30, "Corda", "Cotone", "Yellow and blue"),
+];
+
+
+
+var_dump($products);
+
+/*
 $products = new Products();
 $food = new Food();
 $toys = new Toys();
@@ -26,4 +38,4 @@ $users->setFirstName("Martina");
 $users->setLastName("Verdi");
 $users->setEmail("martyverdi@email.it");
 
-var_dump($products, $food, $toys, $users);
+var_dump($products, $food, $toys, $users); */ 
